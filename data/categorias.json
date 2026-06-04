@@ -1,0 +1,20 @@
+[
+  {
+    "nivel": "facil",
+    "pregunta": "Cual de estas opciones pertenece a la categoria frutas?",
+    "respuesta": "Manzana",
+    "pista": "Es un alimento dulce que crece en un arbol."
+  },
+  {
+    "nivel": "medio",
+    "pregunta": "Cual de estas opciones pertenece a la categoria profesiones de salud?",
+    "respuesta": "Medico",
+    "pista": "Ayuda a las personas cuando estan enfermas."
+  },
+  {
+    "nivel": "dificil",
+    "pregunta": "Cual de estas opciones pertenece a la categoria instrumentos musicales?",
+    "respuesta": "Violin",
+    "pista": "Produce sonido y se toca con arco."
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "nivel": "facil",
+    "textoMostrado": "ODNUM ALOH",
+    "respuesta": "Hola mundo"
+  },
+  {
+    "nivel": "medio",
+    "textoMostrado": "ETNEM AL ECELATROF ACITCARP AL",
+    "respuesta": "La practica fortalece la mente"
+  },
+  {
+    "nivel": "dificil",
+    "textoMostrado": "SAROGATIP OREMUN LE SE SAEDI SAL Y ODNUM LE ANREIBOG EUQ OL",
+    "respuesta": "Lo que gobierna el mundo y las ideas es el numero Pitagoras"
+  }
+]

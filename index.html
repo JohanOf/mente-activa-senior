@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ejercicios accesibles de memoria y estimulación cognitiva para personas mayores.">
+  <title>MenteActiva Senior</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+  <main id="main-content" class="app-shell" tabindex="-1">
+    <header class="top-bar" aria-label="Barra superior">
+      <div class="brand-wrapper">
+        <div class="brain-logo-container" aria-hidden="true">
+          <svg class="brain-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+            <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1 0-3.12 3 3 0 0 1 0-4.88 2.5 2.5 0 0 1 0-3.12A2.5 2.5 0 0 1 9.5 2Z"></path>
+            <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 0-3.12 3 3 0 0 0 0-4.88 2.5 2.5 0 0 0 0-3.12A2.5 2.5 0 0 0 14.5 2Z"></path>
+          </svg>
+        </div>
+        <div>
+          <p class="brand">MenteActiva Senior</p>
+          <h1>Ejercicios de memoria y estimulación cognitiva</h1>
+        </div>
+      </div>
+      <div class="top-bar-controls">
+        <section class="score-card" role="status" aria-live="polite" aria-atomic="true" aria-label="Puntaje actual">
+          <span>PUNTAJE ACTUAL</span>
+          <strong id="score-value">0 puntos</strong>
+        </section>
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Activar tema oscuro" aria-pressed="false">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <section id="home-screen" class="screen active" aria-labelledby="home-title" tabindex="-1">
+      <div class="card hero-card">
+        <div class="welcome-ribbon"><span>BIENVENIDO</span></div>
+        <h2 id="home-title">MenteActiva Senior</h2>
+        <p>
+          Aplicación web pensada para personas mayores. Incluye actividades de memoria con instrucciones simples,
+          botones grandes y un diseño claro para celular, tablet y computadora.
+        </p>
+        <div class="start-btn-container">
+          <button id="start-button" class="primary-button large-button" type="button">
+            <span>Comenzar</span>
+            <span class="arrow-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu-screen" class="screen" aria-labelledby="menu-title" tabindex="-1" hidden>
+      <div class="card">
+        <p class="section-tag">Menú principal</p>
+        <h2 id="menu-title">Elija una actividad y un nivel</h2>
+
+        <div class="difficulty-panel" aria-labelledby="difficulty-title">
+          <h3 id="difficulty-title">Nivel de dificultad</h3>
+          <div id="difficulty-buttons" class="button-grid three-columns" role="group" aria-label="Niveles de dificultad">
+            <button class="secondary-button difficulty-button selected" type="button" data-difficulty="facil" aria-pressed="true">Fácil</button>
+            <button class="secondary-button difficulty-button" type="button" data-difficulty="medio" aria-pressed="false">Medio</button>
+            <button class="secondary-button difficulty-button" type="button" data-difficulty="dificil" aria-pressed="false">Difícil</button>
+          </div>
+        </div>
+
+        <div class="activity-panel" aria-labelledby="activity-title">
+          <h3 id="activity-title">Actividades</h3>
+          <div class="button-grid activity-grid">
+            <button class="menu-button" type="button" data-activity="frase">
+              <span class="activity-name">Frase invertida</span>
+              <span class="activity-skill">Memoria de trabajo</span>
+            </button>
+            <button class="menu-button" type="button" data-activity="cuadrado">
+              <span class="activity-name">Cuadrado mágico</span>
+              <span class="activity-skill">Lógica y cálculo</span>
+            </button>
+            <button class="menu-button" type="button" data-activity="palabra">
+              <span class="activity-name">Palabra oculta</span>
+              <span class="activity-skill">Lenguaje y vocabulario</span>
+            </button>
+            <button class="menu-button" type="button" data-activity="secuencia">
+              <span class="activity-name">Secuencia de palabras</span>
+              <span class="activity-skill">Memoria de secuencia</span>
+            </button>
+            <button class="menu-button" type="button" data-activity="categoria">
+              <span class="activity-name">Relación por categoría</span>
+              <span class="activity-skill">Semántica y categorización</span>
+            </button>
+            <button class="menu-button" type="button" data-activity="refran">
+              <span class="activity-name">Refrán incompleto</span>
+              <span class="activity-skill">Memoria a largo plazo</span>
+            </button>
+            <button class="menu-button" type="button" data-activity="conteo">
+              <span class="activity-name">Conteo mental</span>
+              <span class="activity-skill">Atención y concentración</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="activity-screen" class="screen" aria-labelledby="activity-title-current" tabindex="-1" hidden>
+      <div class="card">
+        <div class="activity-header">
+          <div>
+            <p class="section-tag" id="activity-tag">Actividad</p>
+            <h2 id="activity-title-current">Actividad</h2>
+          </div>
+          <span class="difficulty-badge" id="difficulty-badge">Nivel: Fácil</span>
+        </div>
+
+        <div class="instructions-box" aria-labelledby="instructions-title">
+          <h3 id="instructions-title">Instrucciones</h3>
+          <p id="activity-instructions"></p>
+        </div>
+
+        <div class="voice-panel" role="group" aria-label="Apoyo por voz y pistas">
+          <button id="speak-button" class="secondary-button voice-btn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true" focusable="false">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+            </svg>
+            <span>Escuchar</span>
+          </button>
+          <button id="stop-speech-button" class="secondary-button voice-btn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true" focusable="false">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+            </svg>
+            <span>Silenciar</span>
+          </button>
+          <button id="dictation-button" class="secondary-button voice-btn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true" focusable="false">
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+              <line x1="12" y1="19" x2="12" y2="22"></line>
+            </svg>
+            <span>Dictar</span>
+          </button>
+          <button id="hint-button" class="secondary-button voice-btn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            <span>Pista</span>
+          </button>
+        </div>
+
+        <div id="hint-box" class="hint-panel" aria-live="polite" aria-atomic="true"></div>
+
+        <div id="activity-content" class="activity-content"></div>
+
+        <div id="feedback" class="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+
+        <div class="button-grid action-grid" role="group" aria-label="Acciones de la actividad">
+          <button id="check-button" class="primary-button action-btn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true" focusable="false">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Validar respuesta</span>
+          </button>
+          <button id="repeat-button" class="secondary-button action-btn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true" focusable="false">
+              <path d="M23 4v6h-6"></path>
+              <path d="M1 20v-6h6"></path>
+              <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+            </svg>
+            <span>Repetir ejercicio</span>
+          </button>
+          <button id="switch-button" class="secondary-button action-btn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true" focusable="false">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            <span>Cambiar juego</span>
+          </button>
+          <button id="menu-button" class="secondary-button action-btn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true" focusable="false">
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>Volver al menú</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/frase-invertida.js"></script>
+  <script src="js/cuadrado-magico.js"></script>
+  <script src="js/palabra-oculta.js"></script>
+  <script src="js/secuencia-palabras.js"></script>
+  <script src="js/relacion-categoria.js"></script>
+  <script src="js/refran-incompleto.js"></script>
+  <script src="js/conteo-mental.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

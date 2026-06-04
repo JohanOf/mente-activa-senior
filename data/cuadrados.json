@@ -1,0 +1,17 @@
+[
+  {
+    "nivel": "facil",
+    "sumaObjetivo": 15,
+    "cuadro": [[8, null, 6], [3, 5, null], [null, 9, 2]]
+  },
+  {
+    "nivel": "medio",
+    "sumaObjetivo": 24,
+    "cuadro": [[10, null, 8], [null, 8, 10], [8, 10, null]]
+  },
+  {
+    "nivel": "dificil",
+    "sumaObjetivo": 264,
+    "cuadro": [[96, null, 74], [null, 88, null], [80, null, 90]]
+  }
+]

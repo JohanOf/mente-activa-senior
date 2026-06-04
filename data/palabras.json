@@ -1,0 +1,17 @@
+[
+  {
+    "nivel": "facil",
+    "pista": "Animal conocido por dar lana",
+    "respuesta": "Oveja"
+  },
+  {
+    "nivel": "medio",
+    "pista": "Conocida profesion relacionada con hacer pan",
+    "respuesta": "Panadero"
+  },
+  {
+    "nivel": "dificil",
+    "pista": "Capacidad mental para recordar experiencias pasadas",
+    "respuesta": "Memoria"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "nivel": "facil",
+    "secuencia": ["sol", "casa", "flor"],
+    "respuesta": "sol casa flor",
+    "pista": "Recuerde la primera palabra: sol."
+  },
+  {
+    "nivel": "medio",
+    "secuencia": ["puerta", "reloj", "naranja", "tren"],
+    "respuesta": "puerta reloj naranja tren",
+    "pista": "Las dos palabras del centro son reloj y naranja."
+  },
+  {
+    "nivel": "dificil",
+    "secuencia": ["montana", "cuchara", "ventana", "camino", "jardin"],
+    "respuesta": "montana cuchara ventana camino jardin",
+    "pista": "La tercera palabra es ventana."
+  }
+]
