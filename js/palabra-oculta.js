@@ -63,7 +63,14 @@ window.PalabraOculta = {
   },
 
   render(container, exercise) {
-    const letters = exercise.letters
+    // Mezcla aleatoria (Fisher-Yates) para que las letras no salgan en orden
+    const shuffled = [...exercise.letters];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    const letters = shuffled
       .map((letter) => `<span class="letter-chip">${letter}</span>`)
       .join("");
 
