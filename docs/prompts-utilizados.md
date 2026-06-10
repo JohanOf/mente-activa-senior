@@ -146,7 +146,4 @@ Antes de finalizar, revisa que:
 
 ## Nuevos prompts usados durante el desarrollo
 
-- ** Iteracion 2 ** :
-Actúa como un Desarrollador Frontend Senior y Experto en UX. Necesito optimizar el código actual de la aplicación “MenteActiva Senior” para asegurar un despliegue limpio y profesional, manteniendo la premisa de usar exclusivamente HTML, CSS y JavaScript nativo, sin dependencias externas.
-- ** Iteracion 3 ** :
-Actúa como un Especialista en Accesibilidad Web (W3C/WCAG) y Diseñador UI. El objetivo de esta iteración es auditar y corregir los problemas de accesibilidad y la paleta de colores actual de "MenteActiva Senior" para adaptarla a estándares estrictos de Alto Contraste (AAA).
+- Espacio reservado para registrar nuevas instrucciones o iteraciones.

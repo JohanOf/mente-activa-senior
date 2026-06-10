@@ -13,6 +13,20 @@ window.CUADRADO_MAGICO_DATA = {
         [3, 5, 7],
         [4, 9, 2]
       ]
+    },
+    {
+      target: 15,
+      grid: [
+        [null, 3, 4],
+        [1, 5, null],
+        [null, 7, 2]
+      ],
+      hint: "Recuerde que el cuadrado clasico suma 15. Complete la fila de abajo.",
+      solution: [
+        [8, 3, 4],
+        [1, 5, 9],
+        [6, 7, 2]
+      ]
     }
   ],
   medio: [
@@ -29,6 +43,20 @@ window.CUADRADO_MAGICO_DATA = {
         [6, 8, 10],
         [8, 10, 6]
       ]
+    },
+    {
+      target: 18,
+      grid: [
+        [5, null, 9],
+        [10, 6, null],
+        [null, null, 7]
+      ],
+      hint: "Todas las filas, columnas y diagonales deben sumar 18.",
+      solution: [
+        [5, 4, 9],
+        [10, 6, 2],
+        [3, 8, 7]
+      ]
     }
   ],
   dificil: [
@@ -44,6 +72,20 @@ window.CUADRADO_MAGICO_DATA = {
         [96, 94, 74],
         [88, 88, 88],
         [80, 82, 102]
+      ]
+    },
+    {
+      target: 30,
+      grid: [
+        [null, 5, 13],
+        [11, null, null],
+        [7, 15, null]
+      ],
+      hint: "La suma objetivo es 30. Fíjese en el 10 central.",
+      solution: [
+        [12, 5, 13],
+        [11, 10, 9],
+        [7, 15, 8]
       ]
     }
   ]
